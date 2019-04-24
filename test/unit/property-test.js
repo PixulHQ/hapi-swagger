@@ -1,8 +1,8 @@
 'use strict';
-const Code = require('code');
-const Joi = require('joi');
-const Lab = require('lab');
-const Hoek = require('hoek');
+const Code = require('@hapi/code');
+const Joi = require('@hapi/joi');
+const Lab = require('@hapi/lab');
+const Hoek = require('@hapi/hoek');
 const Helper = require('../helper.js');
 const Defaults = require('../../lib/defaults.js');
 const Properties = require('../../lib/properties.js');
@@ -306,7 +306,7 @@ lab.experiment('property - ', () => {
         expect(propertiesAlt.parseProperty('x', Joi.array().single(), null, 'body', false, false)).to.equal({ 'type': 'array', 'name': 'x', 'items': { 'type': 'string' }, 'x-constraint': { 'single': true } });
         expect(propertiesAlt.parseProperty('x', Joi.array().length(0), null, 'body', false, false)).to.equal({ 'type': 'array', 'name': 'x', 'items': { 'type': 'string' }, 'x-constraint': { 'length': 0 } });
         expect(propertiesAlt.parseProperty('x', Joi.array().length(2), null, 'body', false, false)).to.equal({ 'type': 'array', 'name': 'x', 'items': { 'type': 'string' }, 'x-constraint': { 'length': 2 } });
-        expect(propertiesAlt.parseProperty('x', Joi.array().unique(), null, 'body', false, false)).to.equal({ 'type': 'array', 'name': 'x', 'items': { 'type': 'string' }, 'x-constraint': { 'unique': true } });
+        expect(propertiesAlt.parseProperty('x', Joi.array().unique(), null, 'body', false, false)).to.equal({ 'type': 'array', 'name': 'x', 'items': { 'type': 'string' }, 'x-constraint': { 'unique': { ignoreUndefined : false } } });
 
         // test options.xProperties = false
         expect(propertiesNoAlt.parseProperty('x', Joi.array().sparse(), null, 'body', false, false)).to.equal({ 'type': 'array', 'name': 'x', 'items': { 'type': 'string' } });

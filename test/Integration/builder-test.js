@@ -1,6 +1,6 @@
-const Joi = require('joi');
-const Code = require('code');
-const Lab = require('lab');
+const Joi = require('@hapi/joi');
+const Code = require('@hapi/code');
+const Lab = require('@hapi/lab');
 const Helper = require('../helper.js');
 const Validate = require('../../lib/validate.js');
 

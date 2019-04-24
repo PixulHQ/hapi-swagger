@@ -1,5 +1,5 @@
-const Code = require('code');
-const Lab = require('lab');
+const Code = require('@hapi/code');
+const Lab = require('@hapi/lab');
 const Validate = require('../../lib/validate.js');
 
 const expect = Code.expect;

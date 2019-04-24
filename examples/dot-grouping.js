@@ -3,10 +3,10 @@
 // This file also shows the use of `pathReplacements` to group endpoints by replacing `.` with '/`
 // in the group naming
 
-const Hapi = require('hapi');
+const Hapi = require('@hapi/hapi');
 const Blipp = require('blipp');
-const Inert = require('inert');
-const Vision = require('vision');
+const Inert = require('@hapi/inert');
+const Vision = require('@hapi/vision');
 const HapiSwagger = require('../');
 
 

@@ -1,8 +1,8 @@
-const Code = require('code');
-const Hapi = require('hapi');
-const Inert = require('inert');
-const Lab = require('lab');
-const Vision = require('vision');
+const Code = require('@hapi/code');
+const Hapi = require('@hapi/hapi');
+const Inert = require('@hapi/inert');
+const Lab = require('@hapi/lab');
+const Vision = require('@hapi/vision');
 const HapiSwagger = require('../../lib/index.js');
 const Validate = require('../../lib/validate.js');
 
