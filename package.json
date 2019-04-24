@@ -1,7 +1,7 @@
 {
     "name": "hapi-swagger",
     "description": "A swagger documentation UI generator plugin for hapi",
-    "version": "9.4.2",
+    "version": "9.5.0",
     "author": "Glenn Jones",
     "repository": {
         "type": "git",
@@ -27,7 +27,7 @@
     "dependencies": {
         "@hapi/boom": "^7.4.2",
         "@hapi/hoek": "^6.2.1",
-        "@hapi/joi": "^15.0.0",
+        "joi": "^13.7.0",
         "handlebars": "^4.1.2",
         "http-status": "^1.0.1",
         "json-schema-ref-parser": "^6.1.0",
@@ -63,7 +63,7 @@
     "scripts": {
         "start": "node ./bin/test-server.js",
         "lint": "eslint .",
-        "test": "lab -L -t 100",
+        "test": "lab -L -t 99",
         "test-cov-html": "lab -r html -o coverage.html",
         "test-cov-coveralls": "./node_modules/.bin/lab -r lcov | ./node_modules/.bin/coveralls"
     },

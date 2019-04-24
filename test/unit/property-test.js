@@ -1,6 +1,6 @@
 'use strict';
 const Code = require('@hapi/code');
-const Joi = require('@hapi/joi');
+const Joi = require('joi');
 const Lab = require('@hapi/lab');
 const Hoek = require('@hapi/hoek');
 const Helper = require('../helper.js');

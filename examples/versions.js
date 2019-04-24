@@ -7,7 +7,7 @@ console.log('The plugin "hapi-api-version" does not yet support HAPI v17.x. This
 // The routes are versioned ie '/api/v1/users' and '/api/v2/users'
 
 const Hapi = require('@hapi/hapi');
-const Joi = require('@hapi/joi');
+const Joi = require('joi');
 const Blipp = require('blipp');
 const Inert = require('@hapi/inert');
 const Vision = require('@hapi/vision');
